@@ -2,19 +2,27 @@
   "name": "asteria-gaia",
   "version": "0.1.0",
   "description": "The core API of the Asteria specification.",
-  "main": "src/com/asteria/gaia.index.js",
+  "main": "dist/com/asteria/gaia.index.js",
   "types": "types/gaia.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive"
   },
   "author": "Pascal ECHEMANN",
   "license": "MIT",
-  "devDependencies": {
-    "@types/uuid": "^3.4.4",
-    "typescript": "^3.4.5"
+  "bugs": {
+    "url": "https://github.com/asteria-gaia/asteria-gaia/issues"
   },
+  "homepage": "https://github.com/asteria-gaia/asteria-gaia#readme",
   "dependencies": {
     "ts-log-debug": "^5.1.0",
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/uuid": "^3.4.4",
+    "grunt": "^1.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-ts": "^6.0.0-beta.22",
+    "typescript": "^3.4.5"
   }
 }
