@@ -1,0 +1,20 @@
+{
+  "name": "asteria-gaia",
+  "version": "0.1.0",
+  "description": "The core API of the Asteria specification.",
+  "main": "src/com/asteria/gaia.index.js",
+  "types": "types/gaia.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pascal ECHEMANN",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/uuid": "^3.4.4",
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "ts-log-debug": "^5.1.0",
+    "uuid": "^3.3.2"
+  }
+}
