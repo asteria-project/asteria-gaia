@@ -8,10 +8,12 @@
 //--> com/asteria/gaia/common/lang/exception
 export { AsteriaError } from './gaia/common/lang/exception/AsteriaError';
 export { AsteriaErrorCode } from './gaia/common/lang/exception/AsteriaErrorCode';
+export { AsteriaException } from './gaia/common/lang/exception/AsteriaException';
 
 //--> com/asteria/gaia/common/lang/util
 export { CommonChar } from './gaia/common/lang/util/CommonChar';
 export { CommonRegExp } from './gaia/common/lang/util/CommonRegExp';
+export { ErrorUtil } from './gaia/common/lang/util/ErrorUtil';
 export { PrimitiveType } from './gaia/common/lang/util/PrimitiveType';
 
  //--> com/asteria/gaia/common/lang

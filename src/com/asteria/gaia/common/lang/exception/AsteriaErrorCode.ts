@@ -21,6 +21,21 @@ export enum AsteriaErrorCode {
      * Indicates that a parameter is not valid.
      */
     INVALID_PARAMETER = 201,
+
+    /**
+     * Indicates that a no Asteria session is specified.
+     */
+    MISSING_SESSION_CONFIG = 202,
+
+    /**
+     * Indicates that no Asteria session name is specified.
+     */
+    MISSING_SESSION_NAME = 203,
+    
+    /**
+     * Indicates that the Asteria session name is not valid.
+     */
+    INVALID_SESSION_NAME = 204,
     
     /**
      * Indicates that an Asteria filter is missing.
