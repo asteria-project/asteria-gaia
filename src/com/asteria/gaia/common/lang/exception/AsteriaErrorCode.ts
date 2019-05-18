@@ -67,5 +67,12 @@ export enum AsteriaErrorCode {
     /**
      * Indicates that an AsQL query condition is not valid.
      */
-    INVALID_ASQL_CONDITION = 303
+    INVALID_ASQL_CONDITION = 303,
+
+    //--> IO errors: 4XX
+
+    /**
+     * Indicates failure while loading a file.
+     */
+    FILE_READ_ERROR = 400
 }

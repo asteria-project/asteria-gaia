@@ -14,4 +14,5 @@ var AsteriaErrorCode;
     AsteriaErrorCode[AsteriaErrorCode["INVALID_ASQL_QUERY"] = 301] = "INVALID_ASQL_QUERY";
     AsteriaErrorCode[AsteriaErrorCode["INVALID_ASQL_OPERAND"] = 302] = "INVALID_ASQL_OPERAND";
     AsteriaErrorCode[AsteriaErrorCode["INVALID_ASQL_CONDITION"] = 303] = "INVALID_ASQL_CONDITION";
+    AsteriaErrorCode[AsteriaErrorCode["FILE_READ_ERROR"] = 400] = "FILE_READ_ERROR";
 })(AsteriaErrorCode = exports.AsteriaErrorCode || (exports.AsteriaErrorCode = {}));
