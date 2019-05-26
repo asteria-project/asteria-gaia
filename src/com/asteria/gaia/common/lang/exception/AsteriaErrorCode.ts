@@ -74,5 +74,10 @@ export enum AsteriaErrorCode {
     /**
      * Indicates failure while loading a file.
      */
-    FILE_READ_ERROR = 400
+    FILE_READ_ERROR = 400,
+    
+    /**
+     * Indicates failure while writing a file.
+     */
+    FILE_WRITE_ERROR = 401
 }
