@@ -10,42 +10,52 @@ export enum AsteriaErrorCode {
      */
     PROCESS_FAILURE = 100,
     
-    //--> Process errors: 2XX
+    /**
+     * Indicates that initialization of an Asteria process failed.
+     */
+    INITIALIZATION_FAILURE = 101,
+
+    //--> Config errors: 2XX
+
+    /**
+     * Indicates that a configuration is not valid.
+     */
+    INVALID_CONFIG = 200,
 
     /**
      * Indicates that a parameter is missing.
      */
-    MISSING_PARAMETER = 200,
+    MISSING_PARAMETER = 201,
 
     /**
      * Indicates that a parameter is not valid.
      */
-    INVALID_PARAMETER = 201,
+    INVALID_PARAMETER = 202,
 
     /**
      * Indicates that a no Asteria session is specified.
      */
-    MISSING_SESSION_CONFIG = 202,
+    MISSING_SESSION_CONFIG = 203,
 
     /**
      * Indicates that no Asteria session name is specified.
      */
-    MISSING_SESSION_NAME = 203,
+    MISSING_SESSION_NAME = 204,
     
     /**
      * Indicates that the Asteria session name is not valid.
      */
-    INVALID_SESSION_NAME = 204,
+    INVALID_SESSION_NAME = 205,
     
     /**
      * Indicates that an Asteria filter is missing.
      */
-    MISSING_FILTER = 202,
+    MISSING_FILTER = 206,
 
     /**
      * Indicates that an Asteria filter is not valid.
      */
-    INVALID_FILTER = 203,
+    INVALID_FILTER = 207,
 
     //--> AsQL errors: 3XX
 
