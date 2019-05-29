@@ -8,5 +8,8 @@ class AsteriaException extends Error {
         this.code = code;
         this.stack = stack;
     }
+    toString() {
+        return `AsteriaException: code=${this.code}, name=${this.name}, stack=${this.stack}`;
+    }
 }
 exports.AsteriaException = AsteriaException;

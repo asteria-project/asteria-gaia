@@ -29,4 +29,13 @@ export class AsteriaException extends Error {
      * The code reference for this error.
      */
     public readonly code: AsteriaErrorCode;
+
+    /**
+     * Return a string representing this <code>AsteriaError</code> object.
+     * 
+     * @returns {string} a string representing this <code>AsteriaError</code> object.
+     */
+    public toString(): string {
+        return `AsteriaException: code=${this.code}, name=${this.name}, stack=${this.stack}`;
+    }
 }
