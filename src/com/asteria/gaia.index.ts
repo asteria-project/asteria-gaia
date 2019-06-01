@@ -10,6 +10,10 @@ export { AsteriaError } from './gaia/common/lang/exception/AsteriaError';
 export { AsteriaErrorCode } from './gaia/common/lang/exception/AsteriaErrorCode';
 export { AsteriaException } from './gaia/common/lang/exception/AsteriaException';
 
+//--> com/asteria/gaia/common/lang/net
+export { HttpMethod } from './gaia/common/lang/net/http/HttpMethod';
+export { HttpStatusCode } from './gaia/common/lang/net/http/HttpStatusCode';
+
 //--> com/asteria/gaia/common/lang/stream
 export { StreamEventType } from './gaia/common/lang/stream/StreamEventType';
 
