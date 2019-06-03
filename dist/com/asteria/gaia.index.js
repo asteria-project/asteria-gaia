@@ -1,5 +1,7 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
+var AbstractAsteriaObject_1 = require("./gaia/common/lang/core/AbstractAsteriaObject");
+exports.AbstractAsteriaObject = AbstractAsteriaObject_1.AbstractAsteriaObject;
 var AsteriaError_1 = require("./gaia/common/lang/exception/AsteriaError");
 exports.AsteriaError = AsteriaError_1.AsteriaError;
 var AsteriaErrorCode_1 = require("./gaia/common/lang/exception/AsteriaErrorCode");
@@ -20,8 +22,6 @@ var ErrorUtil_1 = require("./gaia/common/lang/util/ErrorUtil");
 exports.ErrorUtil = ErrorUtil_1.ErrorUtil;
 var PrimitiveType_1 = require("./gaia/common/lang/util/PrimitiveType");
 exports.PrimitiveType = PrimitiveType_1.PrimitiveType;
-var AbstractAsteriaObject_1 = require("./gaia/common/lang/AbstractAsteriaObject");
-exports.AbstractAsteriaObject = AbstractAsteriaObject_1.AbstractAsteriaObject;
 var FilterCondition_1 = require("./gaia/filter/FilterCondition");
 exports.FilterCondition = FilterCondition_1.FilterCondition;
 var FilterOperator_1 = require("./gaia/filter/FilterOperator");

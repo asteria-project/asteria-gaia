@@ -5,6 +5,12 @@
  * Please maintain package and alphabetical order!
  */
 
+//--> com/asteria/gaia/common/lang/core
+export { AbstractAsteriaObject } from './gaia/common/lang/core/AbstractAsteriaObject';
+export { AsteriaLine } from './gaia/common/lang/core/AsteriaLine';
+export { AsteriaObject } from './gaia/common/lang/core/AsteriaObject';
+export { AsteriaRegistry } from './gaia/common/lang/core/AsteriaRegistry';
+
 //--> com/asteria/gaia/common/lang/exception
 export { AsteriaError } from './gaia/common/lang/exception/AsteriaError';
 export { AsteriaErrorCode } from './gaia/common/lang/exception/AsteriaErrorCode';
@@ -23,12 +29,7 @@ export { CommonRegExp } from './gaia/common/lang/util/CommonRegExp';
 export { ErrorUtil } from './gaia/common/lang/util/ErrorUtil';
 export { PrimitiveType } from './gaia/common/lang/util/PrimitiveType';
 
- //--> com/asteria/gaia/common/lang
- export { AbstractAsteriaObject } from './gaia/common/lang/AbstractAsteriaObject';
- export { AsteriaLine } from './gaia/common/lang/AsteriaLine';
- export { AsteriaObject } from './gaia/common/lang/AsteriaObject';
-
- //--> com/asteria/gaia/config
+//--> com/asteria/gaia/config
  export { StreamProcessConfig } from './gaia/config/StreamProcessConfig';
  export { AsteriaSessionConfig } from './gaia/config/AsteriaSessionConfig';
 
