@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const CommonChar_1 = require("../util/CommonChar");
-const AbstractAsteriaObject_1 = require("../AbstractAsteriaObject");
+const AbstractAsteriaObject_1 = require("../core/base/AbstractAsteriaObject");
 class AsteriaError extends AbstractAsteriaObject_1.AbstractAsteriaObject {
     constructor(code, className, message, stack) {
-        super('com.asteria.gaia.common.lang::AsteriaError');
+        super('com.asteria.gaia.common.lang.exception::AsteriaError');
         this.code = code;
         this.className = className;
         this.message = message;

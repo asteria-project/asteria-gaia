@@ -1,8 +1,8 @@
 'use strict';
 Object.defineProperty(exports, "__esModule", { value: true });
-var AbstractAsteriaObject_1 = require("./gaia/common/lang/core/AbstractAsteriaObject");
+var AbstractAsteriaObject_1 = require("./gaia/common/lang/core/base/AbstractAsteriaObject");
 exports.AbstractAsteriaObject = AbstractAsteriaObject_1.AbstractAsteriaObject;
-var AbstractAsteriaRegistry_1 = require("./gaia/common/lang/core/AbstractAsteriaRegistry");
+var AbstractAsteriaRegistry_1 = require("./gaia/common/lang/core/base/AbstractAsteriaRegistry");
 exports.AbstractAsteriaRegistry = AbstractAsteriaRegistry_1.AbstractAsteriaRegistry;
 var AsteriaError_1 = require("./gaia/common/lang/exception/AsteriaError");
 exports.AsteriaError = AsteriaError_1.AsteriaError;

@@ -1,6 +1,6 @@
 import { AbstractAsteriaObject } from './AbstractAsteriaObject';
-import { AsteriaRegistry } from './AsteriaRegistry';
-import { AsteriaException } from '../exception/AsteriaException';
+import { AsteriaRegistry } from '../AsteriaRegistry';
+import { Subscribable, Observable, of } from 'rxjs';
 
 /**
  * The abstract class for all <code>AsteriaRegistry</code> implementations.
@@ -29,38 +29,38 @@ export abstract class AbstractAsteriaRegistry<T> extends AbstractAsteriaObject i
     /**
      * @inheritdoc
      */
-    public abstract add(item: T, callback: (err: AsteriaException)=> void): void;
+    public abstract add(item: T): Subscribable<T>;
     
     /**
      * @inheritdoc
      */
-    public abstract remove(item: T, callback: (err: AsteriaException)=> void): void;
+    public abstract remove(item: T): Subscribable<T>;
 
     /**
      * @inheritdoc
      */
-    public get(id: string, callback: (err: AsteriaException, item: T)=> void): void {
-        callback(null, this.MAP.get(id));
+    public get(id: string): Observable<T> {
+        return of(this.MAP.get(id));
     }
 
     /**
      * @inheritdoc
      */
-    public has(id: string, callback: (err: AsteriaException, exists: boolean)=> void): void {
-        callback(null, this.MAP.has(id));
+    public has(id: string): Observable<boolean> {
+        return of(this.MAP.has(id));
     }
 
     /**
      * @inheritdoc
      */
-    public getAll(callback: (err: AsteriaException, items: Array<T>)=> void): void {
-        callback(null, Array.from(this.MAP.values()));
+    public getAll(): Observable<Array<T>> {
+        return of(Array.from(this.MAP.values()));
     }
 
     /**
      * @inheritdoc
      */
-    public getIds(callback: (err: AsteriaException, items: Array<string>)=> void): void {
-        callback(null, Array.from(this.MAP.keys()));
+    public getIds(): Observable<Array<string>> {
+        return of(Array.from(this.MAP.keys()));
     }
 }

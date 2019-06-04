@@ -1,7 +1,7 @@
 import { StreamProcessType } from './StreamProcessType';
 import { AsteriaStream } from '../core/AsteriaStream';
 import { StreamProcessConfig } from '../config/StreamProcessConfig';
-import { AsteriaObject } from '../common/lang/AsteriaObject';
+import { AsteriaObject } from '../common/lang/core/AsteriaObject';
 import { AsteriaContext } from '../core/AsteriaContext';
 
 /**

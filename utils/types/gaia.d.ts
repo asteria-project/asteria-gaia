@@ -1,10 +1,12 @@
 /*!
  * Asteria Gaia Node Module
  * Copyright(c) 2019 Pascal ECHEMANN
- * Apache 2.0 Licensed
+ * MIT Licensed
  * This is a part of the Asteria Project: <https://github.com/asteria-project>
  */
 
 declare module "asteria-gaia" {
+
+import { Subscribable, Observable } from "rxjs";
 
 /*PLACEHOLDER*/}

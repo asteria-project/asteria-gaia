@@ -1,4 +1,5 @@
 import { AsteriaException } from '../exception/AsteriaException';
+import { Subscribable } from 'rxjs';
 
 /**
  * The <code>AsteriaRegistry</code> interface defines the API that you must implement to create registries in Asteria
@@ -10,50 +11,51 @@ export interface AsteriaRegistry<T> {
      * Add the specified item to the registry.
      * 
      * @param {T} item the item to add to the registry.
-     * @param {(err: AsteriaException)=> void} callback the callback method invoked once the item has been added.
+     * 
+     * @returns {Subscribable<T>} an observable of the item added to the registry.
      */
-    add(item: T, callback: (err: AsteriaException)=> void): void;
+    add(item: T): Subscribable<T>;
 
     /**
      * Remove the specified item from the registry.
      * 
      * @param {T} item the item to remove from the registry.
-     * @param {(err: AsteriaException)=> void} callback the callback method invoked once the item has been removed.
+     * 
+     * @returns {Subscribable<T>} an observable of the item removed from the registry.
      */
-    remove(item: T, callback: (err: AsteriaException)=> void): void;
+    remove(item: T): Subscribable<T>;
 
     /**
      * Indicate whether the item with the specified identifier is registered in this registry (<code>true</code>),
      * or not (<code>false</code>).
      * 
      * @param {string} id the identifier of the item to check.
-     * @param {(err: AsteriaException, item: boolean)=> void)} callback the callback method invoked once process is
-     *                                                                  finished.
+     * 
+     * @returns {Subscribable<boolean>} an observable of <code>true</code>  whether the item with the specified
+     *                                  identifier is registered in this registry.
      */
-    has(id: string, callback: (err: AsteriaException, exists: boolean)=> void): void;
+    has(id: string): Subscribable<boolean>;
     
     /**
      * Return the item with the specified identifier.
      * 
      * @param {string} id the identifier of the item to get.
-     * @param {(err: AsteriaException, item: T)=> void)} callback the callback method invoked once the item has been 
-     *                                                            found.
+     * 
+     * @returns {Subscribable<T>} an observable of the item found in the registry.
      */
-    get(id: string, callback: (err: AsteriaException, item: T)=> void): void;
+    get(id: string): Subscribable<T>;
     
     /**
      * Return an array of all items declared in this registry.
      * 
-     * @param {(err: AsteriaException, items: Array<T>)=> void)} callback the callback method invoked once the items
-     *                                                                    have been collected.
+     * @returns {Subscribable<Array<T>>} an observable of all items found in the registry.
      */
-    getAll(callback: (err: AsteriaException, items: Array<T>)=> void): void;
+    getAll(): Subscribable<Array<T>>;
 
     /**
      * Return an array of all identifiers declared in this registry.
      * 
-     * @param {(err: AsteriaException, items: Array<string>)=> void)} callback the callback method invoked once the 
-     *                                                                    identifiers have been collected.
+     * @returns {Subscribable<Array<string>>} an observable of all identifiers found in the registry.
      */
-    getIds(callback: (err: AsteriaException, items: Array<string>)=> void):void;
+    getIds(): Subscribable<Array<string>>;
 }

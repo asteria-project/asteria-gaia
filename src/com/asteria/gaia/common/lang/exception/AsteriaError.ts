@@ -1,6 +1,6 @@
 import { AsteriaErrorCode } from './AsteriaErrorCode';
 import { CommonChar } from '../util/CommonChar';
-import { AbstractAsteriaObject } from '../AbstractAsteriaObject';
+import { AbstractAsteriaObject } from '../core/base/AbstractAsteriaObject';
 
 /**
  * The <code>AsteriaError</code> class represents an error in an Asteria environment.
@@ -17,7 +17,7 @@ export class AsteriaError extends AbstractAsteriaObject {
      *                       for this error.
      */
     constructor(code: AsteriaErrorCode, className: string, message: string, stack?: string) {
-        super('com.asteria.gaia.common.lang::AsteriaError');
+        super('com.asteria.gaia.common.lang.exception::AsteriaError');
         this.code = code;
         this.className = className;
         this.message = message;

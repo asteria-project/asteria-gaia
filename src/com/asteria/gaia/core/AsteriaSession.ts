@@ -8,7 +8,7 @@ export interface AsteriaSession {
     /**
      * Return the context of this Asteria session.
      * 
-     * @return {AsteriaContext} the context of this Asteria sessi
+     * @returns {AsteriaContext} the context of this Asteria sessi
      */
     getContext(): AsteriaContext;
 }

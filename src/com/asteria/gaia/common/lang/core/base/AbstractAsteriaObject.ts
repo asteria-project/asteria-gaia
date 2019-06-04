@@ -1,4 +1,4 @@
-import { AsteriaObject } from './AsteriaObject';
+import { AsteriaObject } from '../AsteriaObject';
 
 /**
  * The base class for all <code>AsteriaObject</code> objects.

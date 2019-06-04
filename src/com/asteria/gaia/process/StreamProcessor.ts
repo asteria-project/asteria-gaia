@@ -12,7 +12,7 @@ export interface StreamProcessor {
      * 
      * @param {StreamProcess} process the stream process to add to this processor.
      * 
-     * @return {StreamProcessor} a reference to this <code>StreamProcessor</code> object.
+     * @returns {StreamProcessor} a reference to this <code>StreamProcessor</code> object.
      */
     add(process: StreamProcess): StreamProcessor;
 
@@ -21,14 +21,14 @@ export interface StreamProcessor {
      * 
      * @param {StreamProcess} process the stream process to remove from this processor.
      * 
-     * @return {StreamProcessor} a reference to this <code>StreamProcessor</code> object.
+     * @returns {StreamProcessor} a reference to this <code>StreamProcessor</code> object.
      */
     remove(process: StreamProcess): StreamProcessor;
 
     /**
      * Run all processes registered in this processor and return the last registered stream.
      * 
-     * @return {AsteriaStream} the last stream registered in this processor.
+     * @returns {AsteriaStream} the last stream registered in this processor.
      */
     run(): AsteriaStream;
 }

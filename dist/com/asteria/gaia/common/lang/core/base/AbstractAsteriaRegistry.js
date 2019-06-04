@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const AbstractAsteriaObject_1 = require("./AbstractAsteriaObject");
+const rxjs_1 = require("rxjs");
 class AbstractAsteriaRegistry extends AbstractAsteriaObject_1.AbstractAsteriaObject {
     constructor(classRef, createMap = true) {
         super(classRef);
@@ -9,17 +10,17 @@ class AbstractAsteriaRegistry extends AbstractAsteriaObject_1.AbstractAsteriaObj
             this.MAP = new Map();
         }
     }
-    get(id, callback) {
-        callback(null, this.MAP.get(id));
+    get(id) {
+        return rxjs_1.of(this.MAP.get(id));
     }
-    has(id, callback) {
-        callback(null, this.MAP.has(id));
+    has(id) {
+        return rxjs_1.of(this.MAP.has(id));
     }
-    getAll(callback) {
-        callback(null, Array.from(this.MAP.values()));
+    getAll() {
+        return rxjs_1.of(Array.from(this.MAP.values()));
     }
-    getIds(callback) {
-        callback(null, Array.from(this.MAP.keys()));
+    getIds() {
+        return rxjs_1.of(Array.from(this.MAP.keys()));
     }
 }
 exports.AbstractAsteriaRegistry = AbstractAsteriaRegistry;

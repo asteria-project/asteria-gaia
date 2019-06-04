@@ -12,7 +12,7 @@ export interface StreamProcessBuilder {
      * @param {any} processClass the type of the new <code>StreamProcess</code> object.
      * @param {StreamProcessConfig} config the config associated with the new <code>StreamProcess</code> object. 
      * 
-     * @return {StreamProcess} a new <code>StreamProcess</code> object.
+     * @returns {StreamProcess} a new <code>StreamProcess</code> object.
      */
     build(processClass: any, config?: StreamProcessConfig): StreamProcess;
 }

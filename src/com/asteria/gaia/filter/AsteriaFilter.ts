@@ -20,7 +20,7 @@ export interface AsteriaFilter {
      * @param {string} property the property on which to apply the filter.
      * @param {any} value the value used for comparaison.
      * 
-     * @return {boolean} <code>true</code>  whether the specified object matches this filter; <code>false</code>
+     * @returns {boolean} <code>true</code>  whether the specified object matches this filter; <code>false</code>
      *                   otherwise.
      */
     apply(obj: any, property: string, value: any): boolean;

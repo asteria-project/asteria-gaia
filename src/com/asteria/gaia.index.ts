@@ -5,9 +5,10 @@
  * Please maintain package and alphabetical order!
  */
 
+//--> com/asteria/gaia/common/lang/core/base
+export { AbstractAsteriaObject } from './gaia/common/lang/core/base/AbstractAsteriaObject';
+export { AbstractAsteriaRegistry } from './gaia/common/lang/core/base/AbstractAsteriaRegistry';
 //--> com/asteria/gaia/common/lang/core
-export { AbstractAsteriaObject } from './gaia/common/lang/core/AbstractAsteriaObject';
-export { AbstractAsteriaRegistry } from './gaia/common/lang/core/AbstractAsteriaRegistry';
 export { AsteriaLine } from './gaia/common/lang/core/AsteriaLine';
 export { AsteriaObject } from './gaia/common/lang/core/AsteriaObject';
 export { AsteriaRegistry } from './gaia/common/lang/core/AsteriaRegistry';

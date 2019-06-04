@@ -1,4 +1,4 @@
-import { AsteriaObject } from '../common/lang/AsteriaObject';
+import { AsteriaObject } from '../common/lang/core/AsteriaObject';
 import { StreamProcessConfig } from '../config/StreamProcessConfig';
 import { AsteriaContext } from './AsteriaContext';
 
