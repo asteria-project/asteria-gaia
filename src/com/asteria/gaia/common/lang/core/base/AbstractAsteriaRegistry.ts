@@ -1,6 +1,5 @@
 import { AbstractAsteriaObject } from './AbstractAsteriaObject';
 import { AsteriaRegistry } from '../AsteriaRegistry';
-import { Subscribable, Observable, of } from 'rxjs';
 
 /**
  * The abstract class for all <code>AsteriaRegistry</code> implementations.
@@ -29,38 +28,38 @@ export abstract class AbstractAsteriaRegistry<T> extends AbstractAsteriaObject i
     /**
      * @inheritdoc
      */
-    public abstract add(item: T): Subscribable<T>;
+    public abstract add(item: T): void;
     
     /**
      * @inheritdoc
      */
-    public abstract remove(item: T): Subscribable<T>;
+    public abstract remove(item: T): void;
 
     /**
      * @inheritdoc
      */
-    public get(id: string): Observable<T> {
-        return of(this.MAP.get(id));
+    public get(id: string): T {
+        return this.MAP.get(id);
     }
 
     /**
      * @inheritdoc
      */
-    public has(id: string): Observable<boolean> {
-        return of(this.MAP.has(id));
+    public has(id: string): boolean {
+        return this.MAP.has(id);
     }
 
     /**
      * @inheritdoc
      */
-    public getAll(): Observable<Array<T>> {
-        return of(Array.from(this.MAP.values()));
+    public getAll(): Array<T> {
+        return Array.from(this.MAP.values());
     }
 
     /**
      * @inheritdoc
      */
-    public getIds(): Observable<Array<string>> {
-        return of(Array.from(this.MAP.keys()));
+    public getIds(): Array<string> {
+        return Array.from(this.MAP.keys());
     }
 }

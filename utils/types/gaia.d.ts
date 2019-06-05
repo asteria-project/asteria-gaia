@@ -7,6 +7,4 @@
 
 declare module "asteria-gaia" {
 
-import { Subscribable, Observable } from "rxjs";
-
 /*PLACEHOLDER*/}

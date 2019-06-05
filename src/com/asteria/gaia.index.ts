@@ -8,10 +8,12 @@
 //--> com/asteria/gaia/common/lang/core/base
 export { AbstractAsteriaObject } from './gaia/common/lang/core/base/AbstractAsteriaObject';
 export { AbstractAsteriaRegistry } from './gaia/common/lang/core/base/AbstractAsteriaRegistry';
+export { AbstractAsteriaRegistryAsync } from './gaia/common/lang/core/base/AbstractAsteriaRegistryAsync';
 //--> com/asteria/gaia/common/lang/core
 export { AsteriaLine } from './gaia/common/lang/core/AsteriaLine';
 export { AsteriaObject } from './gaia/common/lang/core/AsteriaObject';
 export { AsteriaRegistry } from './gaia/common/lang/core/AsteriaRegistry';
+export { AsteriaRegistryAsync } from './gaia/common/lang/core/AsteriaRegistryAsync';
 
 //--> com/asteria/gaia/common/lang/exception
 export { AsteriaError } from './gaia/common/lang/exception/AsteriaError';
