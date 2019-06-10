@@ -4,6 +4,7 @@ var StreamEventType;
 (function (StreamEventType) {
     StreamEventType["CLOSE"] = "close";
     StreamEventType["DRAIN"] = "drain";
+    StreamEventType["DATA"] = "data";
     StreamEventType["ERROR"] = "error";
     StreamEventType["FINISH"] = "finish";
     StreamEventType["PIPE"] = "pipe";

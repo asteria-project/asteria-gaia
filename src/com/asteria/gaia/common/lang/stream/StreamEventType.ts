@@ -15,6 +15,11 @@ export enum StreamEventType {
     DRAIN = 'drain',
 
     /**
+     * Represents an event of the type of <code>data</code>.
+     */
+    DATA = 'data',
+
+    /**
      * Represents an event of the type of <code>error</code>.
      */
     ERROR = 'error',
