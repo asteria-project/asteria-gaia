@@ -14,12 +14,32 @@ export enum CommonChar {
     WHITE_SPACE = ' ',
     
     /**
+     * Represents a new line character.
+     */
+    NEW_LINE = '\n',
+    
+    /**
+     * Represents a dot character.
+     */
+    DOT = '.',
+    
+    /**
      * Represents a comma character.
      */
     COMMA = ',',
 
     /**
-     * Represents a new line character.
+     * Represents a slash character.
      */
-    NEW_LINE = '\n'
+    SLASH = '/',
+    
+    /**
+     * Represents a colon character.
+     */
+    COLON = ':',
+    
+    /**
+     * Represents a semicolon character.
+     */
+    SEMICOLON = ';'
 }

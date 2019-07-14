@@ -4,6 +4,10 @@ var CommonChar;
 (function (CommonChar) {
     CommonChar["EMPTY"] = "";
     CommonChar["WHITE_SPACE"] = " ";
-    CommonChar["COMMA"] = ",";
     CommonChar["NEW_LINE"] = "\n";
+    CommonChar["DOT"] = ".";
+    CommonChar["COMMA"] = ",";
+    CommonChar["SLASH"] = "/";
+    CommonChar["COLON"] = ":";
+    CommonChar["SEMICOLON"] = ";";
 })(CommonChar = exports.CommonChar || (exports.CommonChar = {}));
