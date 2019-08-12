@@ -21,6 +21,13 @@ export interface AsteriaRegistry<T> extends AsteriaObject {
     remove(item: T): void;
 
     /**
+     * Remove the item with the specified identifier from the registry.
+     * 
+     * @param {string} id the identifier of the item to remove.
+     */
+    removeId(id: string): void;
+
+    /**
      * Indicate whether the item with the specified identifier is registered in this registry (<code>true</code>),
      * or not (<code>false</code>).
      * 

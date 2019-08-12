@@ -9,6 +9,10 @@ class AbstractAsteriaRegistryAsync extends AbstractAsteriaObject_1.AbstractAster
             this.MAP = new Map();
         }
     }
+    removeId(id, callback) {
+        this.MAP.delete(id);
+        callback(null);
+    }
     get(id, callback) {
         callback(null, this.MAP.get(id));
     }

@@ -24,6 +24,14 @@ export interface AsteriaRegistryAsync<T> extends AsteriaObject {
     remove(item: T, callback: (err: AsteriaException)=> void): void;
 
     /**
+     * Remove the item with the specified identifier from the registry.
+     * 
+     * @param {string} id the identifier of the item to remove.
+     * @param {(err: AsteriaException)=> void} callback the callback method invoked once the item has been removed.
+     */
+    removeId(id: string, callback: (err: AsteriaException)=> void): void;
+
+    /**
      * Indicate whether the item with the specified identifier is registered in this registry (<code>true</code>),
      * or not (<code>false</code>).
      * 

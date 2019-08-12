@@ -9,6 +9,9 @@ class AbstractAsteriaRegistry extends AbstractAsteriaObject_1.AbstractAsteriaObj
             this.MAP = new Map();
         }
     }
+    removeId(id) {
+        this.MAP.delete(id);
+    }
     get(id) {
         return this.MAP.get(id);
     }

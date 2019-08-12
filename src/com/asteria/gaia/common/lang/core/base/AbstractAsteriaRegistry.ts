@@ -38,6 +38,13 @@ export abstract class AbstractAsteriaRegistry<T> extends AbstractAsteriaObject i
     /**
      * @inheritdoc
      */
+    public removeId(id: string): void {
+        this.MAP.delete(id);
+    }
+
+    /**
+     * @inheritdoc
+     */
     public get(id: string): T {
         return this.MAP.get(id);
     }

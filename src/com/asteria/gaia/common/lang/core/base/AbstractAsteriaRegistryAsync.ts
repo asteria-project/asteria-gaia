@@ -39,6 +39,14 @@ export abstract class AbstractAsteriaRegistryAsync<T> extends AbstractAsteriaObj
     /**
      * @inheritdoc
      */
+    public removeId(id: string, callback: (err: AsteriaException)=> void): void {
+        this.MAP.delete(id);
+        callback(null);
+    }
+
+    /**
+     * @inheritdoc
+     */
     public get(id: string, callback: (err: AsteriaException, item: T)=> void): void {
         callback(null, this.MAP.get(id));
     }
