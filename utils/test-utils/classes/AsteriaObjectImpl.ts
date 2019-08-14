@@ -10,7 +10,7 @@ export class AsteriaObjectImpl extends AbstractAsteriaObject {
      * 
      * @param {string} className the fully qualified class name for this object.
      */
-    constructor(classname: string) {
-        super(classname);
+    constructor(className: string) {
+        super(className);
     }
 }

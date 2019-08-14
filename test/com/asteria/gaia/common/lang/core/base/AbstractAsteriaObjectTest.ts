@@ -8,11 +8,11 @@ import { AsteriaObject } from '../../../../../../../../src/com/asteria/gaia/comm
 import { AsteriaObjectImpl } from '../../../../../../../../utils/test-utils/classes/AsteriaObjectImpl';
 
 // Test:
-describe('@AbstractAsteriaObject class test', () => {
+describe('AbstractAsteriaObject class test', () => {
 
-    describe('#getClassName()', () => {
+    describe('constructor', () => {
 
-        it('should return the smae class name as passed to the constructor function', () => {
+        it('#getClassName() should return the same class name as passed to the constructor function', () => {
             const CLASS_NAME: string = 'utils.test-utils.classes::AsteriaObjectImpl';
             const instance: AsteriaObject = new AsteriaObjectImpl(CLASS_NAME);
             expect(instance.getClassName()).to.equal(CLASS_NAME);
