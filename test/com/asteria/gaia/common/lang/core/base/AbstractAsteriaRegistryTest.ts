@@ -36,18 +36,18 @@ describe('AbstractAsteriaRegistry class test', () => {
         it('should remove the item with the specified ID', () => {
             const ITEM: string = 'test-item';
             const CLASS_NAME: string = 'utils.test-utils.classes::AsteriaRegistryImpl';
-            const instance: AsteriaRegistry<string> = new AsteriaRegistryImpl<string>(CLASS_NAME);
+            const instance: AsteriaRegistryImpl<string> = new AsteriaRegistryImpl<string>(CLASS_NAME);
             instance.add(ITEM);
             instance.removeId(ITEM);
-            expect(instance.has(ITEM)).to.be.false;
+            expect(instance.getMap().has(ITEM)).to.be.false;
         });
         
         it('should die silently whether the item does not exist', () => {
             const ITEM: string = 'test-item';
             const CLASS_NAME: string = 'utils.test-utils.classes::AsteriaRegistryImpl';
-            const instance: AsteriaRegistry<string> = new AsteriaRegistryImpl<string>(CLASS_NAME);
+            const instance: AsteriaRegistryImpl<string> = new AsteriaRegistryImpl<string>(CLASS_NAME);
             instance.removeId(ITEM);
-            expect(instance.has(ITEM)).to.be.false;
+            expect(instance.getMap().has(ITEM)).to.be.false;
         });
     });
 
