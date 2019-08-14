@@ -1,6 +1,6 @@
 {
   "name": "asteria-gaia",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "description": "The core API of the Asteria specification.",
   "main": "dist/com/asteria/gaia.index.js",
   "types": "types/gaia.d.ts",
