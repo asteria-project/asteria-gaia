@@ -31,4 +31,11 @@ export interface StreamProcessor {
      * @returns {AsteriaStream} the last stream registered in this processor.
      */
     run(): AsteriaStream;
+
+    /**
+     * Return the number of processes registered in this <code>StreamProcessor</code> object.
+     * 
+     * @returns {number} the number of processes registered in this <code>StreamProcessor</code> object.
+     */
+    size(): number;
 }
