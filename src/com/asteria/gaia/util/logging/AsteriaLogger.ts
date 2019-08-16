@@ -1,10 +1,11 @@
 import { AsteriaLogLevel } from './AsteriaLogLevel';
+import { AsteriaObject } from '../../common/lang/core/AsteriaObject';
 
 /**
  * The <code>AsteriaLogger</code> interface defines the API you must implement to create loggers in an Asteria
  * environment.
  */
-export interface AsteriaLogger {
+export interface AsteriaLogger extends AsteriaObject {
     
     /**
      * Return the log level for this <code>AsteriaLogger</code> onject.

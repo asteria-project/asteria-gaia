@@ -1,10 +1,11 @@
 import { StreamProcessConfig } from '../config/StreamProcessConfig';
 import { StreamProcess } from '../process/StreamProcess';
+import { AsteriaObject } from '../common/lang/core/AsteriaObject';
 
 /**
  * Provides functionalities for building <code>StreamProcess</code> objects.
  */
-export interface StreamProcessBuilder {
+export interface StreamProcessBuilder extends AsteriaObject {
 
     /**
      * Build and return a new <code>StreamProcess</code> object.
